@@ -1035,6 +1035,42 @@
   grid-column: full;
 }
 </code></pre></div>
+        <img src="images/Clipboard_32.png" class=" size-contain position-center-center" style="">
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container present fit-warning has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 0.672rem;">
+        <div style=""><h4 id="cssgridを使用する">CSS Gridを使用する</h4>
+
+<pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"Box"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"Box_Item"</span>&gt;</span>テキストが...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"Box_Item -full"</span>&gt;</span>テキストが...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- 略... --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+
+<pre><code class="css hljs"><span class="hljs-selector-class">.Box</span> {
+  <span class="hljs-attribute">display</span>: grid;
+  grid-template-<span class="hljs-attribute">columns</span>:
+    [full-start]
+      <span class="hljs-built_in">minmax</span>(<span class="hljs-number">20px</span>, <span class="hljs-number">1</span>fr)
+      [main-start]
+        <span class="hljs-built_in">minmax</span>(<span class="hljs-number">0</span>, <span class="hljs-number">500px</span>)
+      [main-end]
+      <span class="hljs-built_in">minmax</span>(<span class="hljs-number">20px</span>, <span class="hljs-number">1</span>fr)
+    [full-end];
+  row-gap: <span class="hljs-number">10px</span>;
+}
+<span class="hljs-selector-class">.Box</span> &gt; *  {
+  grid-column: main;
+}
+<span class="hljs-selector-class">.Box_Item</span><span class="hljs-selector-class">.-full</span> {
+  grid-column: full;
+}
+</code></pre></div>
         <div style=""><p>画面幅が広い時</p>
 
 <div class="single-image-wrapper"><img src="images/Edit_fiddle_-_JSFiddle_-_Code_Playground.png" class=" size-contain position-center-center"></div><p></p>
@@ -1095,6 +1131,17 @@
         <div style=""><div class="single-image-wrapper"><img src="images/Clipboard_12.png" class=" size-contain position-center-center"></div><p></p>
 
 <p><a href="https://jsfiddle.net/fadsuzyn/2/">Demo</a></p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="実例">実例</h3>
+
+<h3 id="codegridのお問合せフォーム">CodeGridのお問合せフォーム</h3></div>
+        <img src="images/Clipboard_28.png" class=" size-contain position-center-center" style="">
       </div>
       <div class="footnotes"></div>
       <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
